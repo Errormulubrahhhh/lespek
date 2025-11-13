@@ -2,18 +2,18 @@
 const merchandiseItems = [
     {
         id: 1,
-        name: "T-Shirt INDICAKOPI",
-        description: "T-Shirt eksklusif dengan desain minimalis logo INDICAKOPI. 100% katun premium.",
+        name: "Topi INDICAKOPI",
+        description: "Topi eksklusif logo INDICAKOPI. 100% katun premium.",
         price: "IDR 150K",
         priceNum: 150000,
-        image: "https://via.placeholder.com/400x300",
+        image: "../img/merch/topi.jpg",
         category: "Apparel",
-        detailedDescription: "T-Shirt premium dengan bahan 100% katun combed 30s yang lembut dan nyaman. Desain minimalis dengan logo INDICAKOPI berkualitas tinggi menggunakan teknik sablon DTG (Direct to Garment) yang tahan lama. Tersedia dalam berbagai ukuran dari S hingga XXL.",
+        detailedDescription: "Topi premium dengan bahan 100% katun combed 30s yang lembut dan nyaman. Desain minimalis dengan logo INDICAKOPI berkualitas tinggi menggunakan teknik sablon DTG (Direct to Garment) yang tahan lama. Tersedia dalam berbagai ukuran all size.",
         features: [
             "Bahan 100% katun combed 30s",
             "Sablon DTG tahan lama",
             "Jahitan rapi dan kuat",
-            "Ukuran: S, M, L, XL, XXL",
+            "Ukuran: all size",
             "Nyaman untuk aktivitas sehari-hari"
         ],
         stock: 50,
@@ -21,31 +21,31 @@ const merchandiseItems = [
     },
     {
         id: 2,
-        name: "Tumbler INDICAKOPI",
-        description: "Tumbler stainless steel berkualitas tinggi dengan desain eksklusif. Kapasitas 500ml.",
+        name: "Coffee Bean Mandailing",
+        description: "Biji kopi pilihan INDICAKOPI, fresh roasted. Kemasan 250gr dengan valve degassing.",
         price: "IDR 200K",
         priceNum: 200000,
-        image: "https://via.placeholder.com/400x300",
+        image: "../img/merch/mandailing.jpg",
         category: "Accessories",
-        detailedDescription: "Tumbler stainless steel double wall dengan teknologi vacuum insulation yang dapat menjaga suhu minuman panas hingga 6 jam dan dingin hingga 12 jam. Desain eksklusif dengan logo INDICAKOPI yang elegan. Tutup anti-tumpah dengan segel silikon food grade.",
+        detailedDescription: "masukkin deskripsinya bang.",
         features: [
-            "Kapasitas 500ml",
-            "Stainless steel double wall",
-            "Vacuum insulation",
-            "Panas 6 jam, dingin 12 jam",
-            "Tutup anti-tumpah",
-            "BPA Free"
+            "100% Arabica beans",
+            "Fresh roasted",
+            "Kemasan 250gr",
+            "One-way valve degassing",
+            "Pilihan roast: Light, Medium, Dark",
+            "Sourced dari petani lokal"
         ],
         stock: 30,
-        colors: ["Silver", "Black Matte", "Rose Gold"]
+        roastLevels: ["Light Roast", "Medium Roast", "Dark Roast"]
     },
     {
         id: 3,
-        name: "Coffee Bean Pack",
+        name: "Coffee Bean Ijen Raung ",
         description: "Biji kopi pilihan INDICAKOPI, fresh roasted. Kemasan 250gr dengan valve degassing.",
         price: "IDR 125K",
         priceNum: 125000,
-        image: "https://via.placeholder.com/400x300",
+        image: "../img/merch/ijenraung.jpg",
         category: "Coffee",
         detailedDescription: "Biji kopi arabica pilihan dari perkebunan terbaik Indonesia. Di-roast fresh sesuai pesanan untuk menjaga kesegaran dan aroma. Kemasan aluminium foil dengan valve degassing untuk menjaga kualitas biji kopi. Tersedia dalam berbagai tingkat roasting sesuai selera Anda.",
         features: [
@@ -65,7 +65,7 @@ const merchandiseItems = [
         description: "Set lengkap untuk manual brewing, termasuk dripper, filter, dan gelas ukur.",
         price: "IDR 350K",
         priceNum: 350000,
-        image: "https://via.placeholder.com/400x300",
+        image: "../img/merch/dripper.jpg",
         category: "Equipment",
         detailedDescription: "Set lengkap untuk para pecinta manual brewing. Termasuk ceramic dripper V60 berkualitas tinggi, 100 lembar paper filter, gelas ukur heat-resistant, dan coffee scoop. Sempurna untuk mengekstrak cita rasa terbaik dari biji kopi pilihan Anda.",
         features: [
@@ -81,11 +81,11 @@ const merchandiseItems = [
     },
     {
         id: 5,
-        name: "Coffee Scale",
+        name: "Coffee Bean Bali Kintamani",
         description: "Timbangan digital presisi tinggi untuk brewing kopi. Akurasi 0.1g dengan timer.",
         price: "IDR 450K",
         priceNum: 450000,
-        image: "https://via.placeholder.com/400x300",
+        image: "../img/merch/kintamani.jpg",
         category: "Equipment",
         detailedDescription: "Timbangan digital presisi tinggi yang dirancang khusus untuk brewing kopi. Dilengkapi dengan timer terintegrasi untuk membantu Anda mendapatkan ekstraksi yang sempurna. Akurasi hingga 0.1 gram dengan kapasitas maksimal 2kg. LCD display yang mudah dibaca dan platform tahan air.",
         features: [
