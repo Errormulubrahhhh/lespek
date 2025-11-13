@@ -1,164 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INDICAKOPI</title>
 
-    <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INDICAKOPI</title>
 
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-  <body>
-    <!-- Navbar Start -->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">INDICA<span>KOPI</span></a>
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+<body class="font-['Poppins']">
+  <!-- Navbar container -->
+  <div id="navbar-container"></div>
+
+  <!-- hero section start -->
+  <section class="hero min-h-screen flex items-center justify-center bg-black relative mt-16 overflow-hidden" id="home">
+    <!-- Background logo with parallax -->
+    <div class="absolute inset-0 opacity-30" data-parallax>
+      <img src="img/indica.jpg" alt="Indica Kopi Logo" class="w-full h-full object-contain mix-blend-screen transform scale-110"/>
+    </div>
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80"></div>
+    
+    <main class="content text-center px-6 max-w-2xl relative z-10">
+      <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">Relax & Enjoy With<span class="text-[#5d5d5d]"> INDICAKOPI</span></h1>
+      <p class="text-white text-xl mb-2">Coffee & Roastery</p>
+      <p class="text-white text-lg mb-2">Jadwal seduh #slowbar :</p>
+      <p class="text-white text-lg mb-2">Buka setiap hari 15.00-24.00</p>
+      <p class="text-white text-lg mb-6">BGR - INA</p>
+      <a href="#" class="cta inline-block bg-[#5d5d5d] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#9a7349] transition duration-300">Beli sekarang</a>
+    </main>
+  </section>
+
+  <!-- hero section end -->
+
+  <!-- about section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> kami</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/tentang-kami.jpg" alt="Tentang kami">
       </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- hero section start -->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Relax & Enjoy With<span> INDICAKOPI</span></h1>
-        <p>Coffee & Roastery</p>
-        <p>Jadwal seduh #slowbar :</p>
-        <p>Buka setiap hari 15.00-24.00</p>
-        <p>BGR - INA</p>
+      <div class="content">
+        <h3>Kenapa milih ngopi di INDICAKOPI?</h3>
+        <p>Hasil dari roasting mandiri ini bukan hanya soal kebanggaan, tapi juga soal kualitas rasa yang terjamin dan
+          konsisten. Para pelanggan setia tahu bahwa kopi di INDICA KOPI selalu menyajikan kesegaran dan karakter yang
+          kuat. Kopi yang disuguhkan adalah representasi sejati dari dedikasi dan passion mereka terhadap dunia kopi,
+          memberikan pengalaman rasa otentik yang sulit ditemukan di tempat lain.</p>
+        <p>Bagi Anda yang penasaran, menemukan INDICA KOPI tidaklah sulit. Kedai yang nyaman ini berlokasi strategis di
+          Perumahan Gaperi 1, tepatnya di Jalan Baru, Bojong Gede, Kabupaten Bogor. Lokasinya yang berada di area
+          pemukiman menjadikannya tempat nongkrong “tetangga” yang akrab dan mudah diakses, siap menyambut siapa pun
+          yang mencari kopi berkualitas.
         </p>
-        <a href="#" class="cta">Beli sekarang</a>
-      </main>
-    </section>
-
-    <!-- hero section end -->
-
-    <!-- about section start -->
-    <section id="about" class="about">
-      <h2><span>Tentang</span> kami</h2>
-
-      <div class="row">
-        <div class="about-img">
-          <img src="img/tentang-kami.jpg" alt="Tentang kami">    
-        </div>
-        <div class="content">
-          <h3>Kenapa milih ngopi di INDICAKOPI?</h3>
-          <p>Hasil dari roasting mandiri ini bukan hanya soal kebanggaan, tapi juga soal kualitas rasa yang terjamin dan konsisten. Para pelanggan setia tahu bahwa kopi di INDICA KOPI selalu menyajikan kesegaran dan karakter yang kuat. Kopi yang disuguhkan adalah representasi sejati dari dedikasi dan passion mereka terhadap dunia kopi, memberikan pengalaman rasa otentik yang sulit ditemukan di tempat lain.</p>
-          <p>Bagi Anda yang penasaran, menemukan INDICA KOPI tidaklah sulit. Kedai yang nyaman ini berlokasi strategis di Perumahan Gaperi 1, tepatnya di Jalan Baru, Bojong Gede, Kabupaten Bogor. Lokasinya yang berada di area pemukiman menjadikannya tempat nongkrong “tetangga” yang akrab dan mudah diakses, siap menyambut siapa pun yang mencari kopi berkualitas.
-</p>
-        </div>
-    </section>
-    <!-- about section end -->
-
-    <!-- menu section start -->
-
-    <section id="menu" class="menu">
-        
-      <h2><span>Menu</span> kami</h2>
-      <p>disini kita menyediakan beberapa menu kopi dan makanan</p>
-
-      <div class="row">
-        <div class="menu-card">
-          <img src="img/menu/americano-menu.jpg" alt="Americano" class="menu-card-img">
-          <h3 class="menu-card-tittle">- Americano -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/espresso-menu.jpg" alt="Espresso"   class="menu-card-img">
-          <h3 class="menu-card-tittle">- Espresso -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/donat-kampung-menu.jpg" alt="Donut kampung" class="menu-card-img">
-          <h3 class="menu-card-tittle">- Donat kampung -</h3>
-          <p class="menu-card-price">IDR 8k</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/mie-nyemek-menu.jpg" alt="Mie nyemek" class="menu-card-img">
-          <h3 class="menu-card-tittle">- Mie nyemek -</h3>
-          <p class="menu-card-price">IDR 17K</p>
-        </div>
-      </div>  
-
-    </section>
-
-    <!-- menu section end -->
-
-    <!-- contact section start -->
-     <section id="contact" class="contact">
-      <h2><span>Kontak</span> kami</h2>
-      <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.201170680707!2d106.79908837591691!3d-6.496195963513764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3b1f6578c6d%3A0x4e3b9cb98b134a35!2sIndica%20Kopi!5e0!3m2!1sid!2sid!4v1761312799440!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama">
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email">
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp">
-          </div>
-          <button type="submit" class="btn">kirim pesan</button>
-        </form>
-        </div>
-      </section>
-
-      <!-- contact section end -->
-
-    <!-- footer start -->
-    <footer>
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="message-circle"></i></a>
       </div>
+  </section>
+  <!-- about section end -->
 
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+  <!-- menu section start -->
+
+  <section id="menu" class="merch py-20 px-6 bg-[#0a0a0a] reveal">
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-4 text-white"><span class="text-[#5d5d5d]">Merchandise</span> kami</h2>
+    <p class="text-center text-gray-300 mb-8">Koleksi merchandise eksklusif dari INDICAKOPI</p>
+
+    <!-- Random Merchandise Cards Container -->
+    <div id="featured-merch" class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Cards will be dynamically inserted here by JavaScript -->
+    </div>
+
+    <!-- View All Merchandise Link -->
+    <div class="text-center mt-10">
+      <a href="pages/merch.html" class="inline-flex items-center gap-2 bg-[#5d5d5d] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#9a7349] transition duration-300">
+        <span>Lihat Semua Merchandise</span>
+        <i data-feather="arrow-right" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- menu section end -->
+
+  <!-- contact section start -->
+  <section id="contact" class="contact py-16 px-6 bg-gradient-to-b from-[#010101] to-[#0a0a0a] reveal">
+    <div class="mb-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3 text-white"><span class="text-[#5d5d5d]">Kontak</span> kami</h2>
+      <p class="text-gray-400 text-sm md:text-base">Temukan kami atau hubungi untuk informasi lebih lanjut</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- Map container with overlay -->
+      <div class="relative rounded-lg overflow-hidden shadow-lg group">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.201170680707!2d106.79908837591691!3d-6.496195963513764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3b1f6578c6d%3A0x4e3b9cb98b134a35!2sIndica%20Kopi!5e0!3m2!1sid!2sid!4v1761312799440!5m2!1sid!2sid"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+          class="map w-full h-[360px] border-2 border-[#5d5d5d] rounded-lg"
+        ></iframe>
+        <!-- Location info overlay -->
+        <div class="absolute left-0 right-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+          <p class="text-white text-sm">
+            <i data-feather="map-pin" class="inline-block w-4 h-4 text-[#5d5d5d] mb-1 mr-1"></i>
+            Perumahan Gaperi 1, Jalan Baru, Bojong Gede, Bogor
+          </p>
+        </div>
       </div>
+      
+      <!-- Contact links container -->
+      <div class="bg-[#1a1a1a] rounded-lg shadow-lg overflow-hidden">
+        <!-- Header section -->
+        <div class="bg-[#0c0c0c] p-4 border-b border-[#5d5d5d]/20">
+          <h3 class="text-[#5d5d5d] font-bold text-lg flex items-center gap-2">
+            <i data-feather="phone" class="w-5 h-5"></i>
+            Hubungi kami
+          </h3>
+        </div>
 
-      <div class="credit">
-        <p>Created by <a href="">Kelompok 5</a>. | &copy; 2025</p>
+        <!-- Links section -->
+        <div class="p-5 space-y-4">
+          <!-- Instagram link -->
+          <a href="https://instagram.com/kedai.indica.kopi" target="_blank" rel="noopener noreferrer" 
+             class="group flex items-center gap-4 p-3 bg-[#0a0a0a] rounded-lg border border-[#1f1f1f] transition-all duration-300 hover:border-[#5d5d5d]/30 hover:bg-[#141414]">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] rounded-full group-hover:bg-[#5d5d5d]/10">
+              <i data-feather="instagram" class="text-[#5d5d5d] w-5 h-5"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-gray-400 text-xs font-medium">Instagram:</span>
+              <span class="text-white text-sm font-semibold">@kedai.indica.kopi</span>
+            </div>
+          </a>
+
+          <!-- WhatsApp link -->
+          <a href="https://wa.me/62895629351010?text=Halo%20Indica%20Kopi%2C%20saya%20ingin%20tanya" target="_blank" rel="noopener noreferrer" 
+             class="group flex items-center gap-4 p-3 bg-[#0a0a0a] rounded-lg border border-[#1f1f1f] transition-all duration-300 hover:border-[#5d5d5d]/30 hover:bg-[#141414]">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] rounded-full group-hover:bg-[#5d5d5d]/10">
+              <i data-feather="message-circle" class="text-[#5d5d5d] w-5 h-5"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-gray-400 text-xs font-medium">WhatsApp:</span>
+              <span class="text-white text-sm font-semibold">+62 892-6293-51010</span>
+            </div>
+          </a>
+
+          <!-- Email link -->
+          <a href="mailto:adimasgm@gmail.com" target="_blank" rel="noopener noreferrer" 
+             class="group flex items-center gap-4 p-3 bg-[#0a0a0a] rounded-lg border border-[#1f1f1f] transition-all duration-300 hover:border-[#5d5d5d]/30 hover:bg-[#141414]">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] rounded-full group-hover:bg-[#5d5d5d]/10">
+              <i data-feather="mail" class="text-[#5d5d5d] w-5 h-5"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-gray-400 text-xs font-medium">Email:</span>
+              <span class="text-white text-sm font-semibold">adimasgm@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- Opening hours -->
+          <div class="mt-6 p-4 bg-[#0a0a0a] rounded-lg border border-[#1f1f1f]">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] rounded-full">
+                <i data-feather="clock" class="text-[#5d5d5d] w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-gray-400 text-xs font-medium">Jam Operasional:</span>
+                <span class="text-white text-sm font-semibold">Setiap Hari</span>
+              </div>
+            </div>
+            <div class="ml-[3.25rem] mt-1 py-2 px-3 bg-[#141414] rounded-md border border-[#1f1f1f]">
+              <p class="text-[#5d5d5d] text-sm font-medium">15:00 - 24:00 WIB</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </footer>
-    <!-- footer start -->
+  <!-- contact section end -->
 
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
+  <!-- footer start -->
+  <footer class="bg-[#0a0a0a] text-white py-10 px-6">
+    <div class="socials flex justify-center gap-6 mb-6">
+      <a href="https://instagram.com/kedai.indica.kopi" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#5d5d5d] transition duration-300"><i data-feather="instagram"></i></a>
+      <a href="https://wa.me/662895629351010?text=Halo%20Indica%20Kopi" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#5d5d5d] transition duration-300"><i data-feather="message-circle"></i></a>
+    </div>
 
-    <!-- ini javascriptnya -->
-    <script src="js/script.js"></script>
-  </body>
+    <div class="links flex justify-center gap-6 mb-6">
+      <a href="#home" class="text-white hover:text-[#5d5d5d] transition duration-300">Home</a>
+      <a href="#about" class="text-white hover:text-[#5d5d5d] transition duration-300">Tentang kami</a>
+      <a href="#menu" class="text-white hover:text-[#5d5d5d] transition duration-300">Menu</a>
+      <a href="#contact" class="text-white hover:text-[#5d5d5d] transition duration-300">Kontak</a>
+    </div>
+
+    <div class="credit text-center">
+      <p>Created by <a href="" class="text-[#5d5d5d] hover:underline">Kelompok 5</a>. | &copy; 2025</p>
+    </div>
+
+  </footer>
+  <!-- footer end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- Component loader -->
+  <script src="js/components.js"></script>
+  
+  <!-- ini javascriptnya -->
+  <script src="js/script.js"></script>
+</body> 
+
 </html>

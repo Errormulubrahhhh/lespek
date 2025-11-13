@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDICAKOPI - Menu</title>
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-['Poppins'] bg-[#010101]">
+    <!-- Navbar container -->
+    <div id="navbar-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/components.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Load navbar component
+        ComponentLoader.loadComponent('navbar-container', '../components/navbar.html');
+      });
+    </script>
+
+    <!-- Menu section start -->
+    <section class="menu py-24 px-6">
+        <h2 class="text-center text-3xl md:text-4xl font-bold mb-4 text-white mt-8"><span
+                class="text-[#5d5d5d]">Menu</span> kami</h2>
+        <p class="text-center text-gray-300 mb-12">Pilihan menu kopi dan minuman spesial INDICAKOPI</p>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Signature Menu -->
+            <div class="mb-12">
+                <div class="border-b border-[#5d5d5d] mb-6">
+                    <div class="flex justify-between pb-2">
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">SIGNATURE</h3>
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">HOT/COLD</h3>
+                    </div>
+                </div>
+                <ul class="space-y-4">
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Americano</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 12K/14K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">KSM</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 18K/20K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <div>
+                            <span class="text-white text-lg font-semibold">Brew Beer</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 22K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <div>
+                            <span class="text-white text-lg font-semibold">Kopi Susu Jamaika</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 24K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                         <div>
+                            <span class="text-white text-lg font-semibold">Lemonade Honey</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 15K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Susu Mereun</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 11K/13K</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Espresso Based -->
+            <div class="mb-12">
+                <div class="border-b border-[#5d5d5d] mb-6">
+                    <div class="flex justify-between pb-2">
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">ESPRESSO BASED</h3>
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">HOT/COLD</h3>
+                    </div>
+                </div>
+                <ul class="space-y-4">
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <div>
+                            <span class="text-white text-lg font-semibold">Spanish Latte</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 20K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Americano</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 10K/12K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Cafe Latte</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 18K/20K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Cappuccino</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 20K/22K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                         <div>
+                            <span class="text-white text-lg font-semibold">Magic</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 24K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Moccacino</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 22K/24K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <div>
+                            <span class="text-white text-lg font-semibold">Flavored Cafelatte</span>
+                            <span class="text-gray-400 text-sm block">(Butterscotch, Caramel, Hazelnut)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 22K/24K</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Manual Brew -->
+            <div class="mb-12">
+                <div class="border-b border-[#5d5d5d] mb-6">
+                    <div class="flex justify-between pb-2">
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">MANUAL BREW</h3>
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">HOT/COLD</h3>
+                    </div>
+                </div>
+                <ul class="space-y-4">
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Filter</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 20K/22K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                         <div>
+                            <span class="text-white text-lg font-semibold">Lemonade Honey</span>
+                            <span class="text-gray-400 text-sm block">(Ice only)</span>
+                        </div>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 18K</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Non-Kopi -->
+            <div class="mb-12">
+                <div class="border-b border-[#5d5d5d] mb-6">
+                    <div class="flex justify-between pb-2">
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">NON COFFEE</h3>
+                        <h3 class="text-[#5d5d5d] text-2xl font-bold">HOT/COLD</h3>
+                    </div>
+                </div>
+                <ul class="space-y-4">
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Matcha Latte</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 18K/20K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Cocoa Latte</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 16K/18K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Caramel Latte</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 16K/18K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Choco Rum</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 18K/20K</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section end -->
+
+    <!-- Makanan section start -->
+    <section class="menu py-12 px-6">
+        <h2 class="text-center text-3xl md:text-4xl font-bold mb-4 text-white"><span
+                class="text-[#5d5d5d]">Makanan</span></h2>
+        <p class="text-center text-gray-300 mb-12">Pilihan makanan pendamping kopi</p>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12">
+                <ul class="space-y-4">
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Donat Kampung</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 10K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Kentang Goreng</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 15K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Mie Nyemek</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 17K</span>
+                    </li>
+                    <li
+                        class="flex justify-between items-center bg-[#1a1a1a] p-4 rounded-lg hover:bg-[#252525] transition duration-300">
+                        <span class="text-white text-lg font-semibold">Butter Toast</span>
+                        <span class="text-[#5d5d5d] text-lg font-bold">IDR 12K</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Makanan section end -->
+
+    <!-- footer start -->
+    <footer class="bg-[#0a0a0a] text-white py-10 px-6">
+        <div class="socials flex justify-center gap-6 mb-6">
+            <a href="https://instagram.com/kedai.indica.kopi" target="_blank" rel="noopener noreferrer"
+                class="text-white hover:text-[#5d5d5d] transition duration-300"><i data-feather="instagram"></i></a>
+            <a href="https://wa.me/62895629351010?text=Halo%20Indica%20Kopi" target="_blank" rel="noopener noreferrer"
+                class="text-white hover:text-[#5d5d5d] transition duration-300"><i
+                    data-feather="message-circle"></i></a>
+        </div>
+
+        <div class="links flex justify-center gap-6 mb-6">
+            <a href="../index.html#home" class="text-white hover:text-[#5d5d5d] transition duration-300">Home</a>
+            <a href="../index.html#about" class="text-white hover:text-[#5d5d5d] transition duration-300">Tentang
+                kami</a>
+            <a href="menu.html" class="text-white hover:text-[#5d5d5d] transition duration-300">Menu</a>
+            <a href="merch.html" class="text-white hover:text-[#5d5d5d] transition duration-300">Merch</a>
+            <a href="../index.html#contact" class="text-white hover:text-[#5d5d5d] transition duration-300">Kontak</a>
+        </div>
+
+        <div class="credit text-center">
+            <p>Created by <a href="" class="text-[#5d5d5d] hover:underline">Kelompok 5</a>. | &copy; 2025</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
+
+    <!-- Component loader -->
+    <script src="../js/components.js"></script>
+
+    <!-- ini javascriptnya -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

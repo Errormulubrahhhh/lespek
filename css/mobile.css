@@ -1,0 +1,153 @@
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+  /* General adjustments */
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar mobile adjustments */
+  .navbar-nav {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #010101;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 40;
+  }
+
+  .navbar-nav:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar-nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(182, 137, 91, 0.1);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .navbar-nav a:hover {
+    background-color: rgba(182, 137, 91, 0.05);
+  }
+
+  .navbar-nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* Hamburger button focus styles */
+  #hamburger-menu:focus {
+    outline: 2px solid #5d5d5d;
+    outline-offset: 2px;
+  }
+
+  #hamburger-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Hero section mobile adjustments */
+  .hero {
+    min-height: calc(100vh - 4rem);
+    padding-top: 5rem;
+  }
+
+  .hero .content {
+    padding: 0 1rem;
+  }
+
+  /* About section mobile adjustments */
+  .about .row {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about .about-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about .content {
+    padding: 0;
+  }
+
+  /* Menu section mobile adjustments */
+  .menu .space-y-4 > * {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .menu li {
+    padding: 1rem;
+  }
+
+  /* Contact section mobile adjustments */
+  .contact .row {
+    gap: 2rem;
+  }
+
+  .contact .map {
+    height: 300px;
+  }
+
+  /* Footer mobile adjustments */
+  footer .links {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  footer .links a {
+    padding: 0.5rem;
+  }
+}
+
+/* Touch-friendly adjustments */
+@media (hover: none) {
+  .navbar-nav a,
+  .menu li,
+  .contact a,
+  footer a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .navbar-nav a:active,
+  .menu li:active,
+  .contact a:active,
+  footer a:active {
+    background-color: rgba(182, 137, 91, 0.1);
+  }
+}
+
+/* Better form elements for mobile */
+input,
+textarea,
+button {
+  font-size: 16px !important; /* Prevents zoom on iOS */
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent content shift when scrollbar appears */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Better tap targets for mobile */
+a, button {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
