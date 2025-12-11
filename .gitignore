@@ -1,0 +1,11 @@
+# Git Ignore untuk Proyek PHP/Composer
+
+# Abaikan semua folder dependencies (vendor)
+/INDICA/vendor/
+
+# Abaikan file lock (dapat diregenerasi)
+/INDICA/composer.lock 
+
+# Abaikan file cache/log (jika ada)
+*.log
+.DS_Store
